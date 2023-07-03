@@ -14,7 +14,7 @@ body{
 .navbar2 ul{
     list-style:none;
     background:#444;
-    width:124%;
+    width:100%;
     padding:0;
     margin:0;
     text-align:right;
@@ -44,7 +44,7 @@ body{
 
 .directions{
     color:white;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Open Sans';
     font-size:20px;
 }
 
