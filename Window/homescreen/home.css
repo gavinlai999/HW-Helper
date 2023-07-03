@@ -1,0 +1,83 @@
+body{
+    background-color:lightgreen;
+}
+.title{
+    color:white;
+    text-align:left;
+    padding:1 rem;
+    padding-left:8px;
+    position:sticky;
+    top:1px;
+    background-color:lightgreen;
+}
+.navbar ul{
+    list-style:none;
+    background:#444;
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:right;
+}
+.navbar li{
+    display: inline-block;
+}
+
+/* text in navbar style */
+.navbar a{
+    text-decoration:none;
+    color: whitesmoke;
+    width:100px;
+    display:block;
+    padding: 25px 20px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-family: arial;
+    text-align:center;
+}
+
+.navbar a:hover{
+    background:whitesmoke;
+    color:#444;
+}
+
+
+/* background picture */
+.picture1{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), 
+    rgba(0,0,0,0.6), url(images/homeworkpicture.jpg));
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing:border-box;
+    text-transform:uppercase;
+}
+
+/*animated 'welcome' text */
+.animation{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size: 160px;
+    -webkit-text-stroke:1px #fff;
+    color:transparent;
+    background-image:linear-gradient(#fff, #fff);
+    background-repeat:no-repeat;
+    -webkit-background-clip:text;
+    background-position: -900px 0;
+    animation: colorload 5s linear infinite alternate;
+}
+
+@keyframes colorload{
+    100%{
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,41 @@
+body{
+    background-color:lightgreen;
+}
+.title{
+    color:white;
+    text-align:left;
+    padding:1 rem;
+    padding-left:8px;
+    position:sticky;
+    top:1px;
+    background-color:lightgreen;
+}
+.navbar3 ul{
+    list-style:none;
+    background:#444;
+    /*width:100%;*/
+    padding:0;
+    margin:0;
+    text-align:right;
+}
+.navbar3 li{
+    display: inline-block;
+}
+
+/* text in navbar style */
+.navbar3 a{
+    text-decoration:none;
+    color: whitesmoke;
+    width:100px;
+    display:block;
+    padding: 25px 20px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-family: arial;
+    text-align:center;
+}
+
+.navbar3 a:hover{
+    background:whitesmoke;
+    color:#444;
+}

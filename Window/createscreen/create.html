@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="'viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="create.css">
+    </head>
+    <body>
+        <h1 class='title'>Create Your Homework Schedule!</h1>
+        <div class="navbar2">
+            <ul>
+                <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/homescreen/home.html'">Home</a></li>
+                <li><a onclick = "window.location.href= 'http://127.0.0.1:5500/Window/createscreen/create.html'">Create</a></li>
+                <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/supportscreen/support.html'">Support</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3 class="directions">Assignment Name:</h3>
+        <textarea class ='textbox' placeholder="Enter Assignment Name Here"></textarea>
+        <br>
+        <br>
+        <div>
+        <p class ='directions'>Subject</p>
+        <input type="checkbox">
+        <label>Math</label>
+        <input type="checkbox">
+        <label>English</label>
+        <input type="checkbox">
+        <label>Science</label>
+        <input type="checkbox">
+        <label>Elective</label>
+        <input type="checkbox">
+        <label>Foreign Language</label>
+        <br>
+        <input type="checkbox">
+        <label>Art</label>
+        <input type="checkbox">
+        <label>History</label>
+        <input type="checkbox">
+        <label>Computer Class</label>
+        <input type="checkbox">
+        <label>PE</label>
+        <input type="checkbox">
+        <label>Culinary Art</label>
+        </div>
+        <h3 class = "directions">Due Date</h3>
+        <div class="dropdown">
+            <button class="dropdownbutton">Time</button>
+            <div class="dropdown-content">
+            <a href="#">1 Hour</a>
+            <a href="#">2 Hours</a>
+            <a href="#">3 Hours</a>
+            <a href="#">4 Hours</a>
+            <a href="#">5 Hours</a>
+            <a href="#">6 Hours</a>
+            </div>
+          </div>
+        <br>
+        <br>
+        <button type="button" class="addbutton">
+            <span class="button__icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </span>
+        </button>
+        </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
