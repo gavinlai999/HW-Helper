@@ -8,7 +8,7 @@ app.get("/", function(req,res) {
     res.sendFile(__dirname + "/Window/homescreen/home.html");
 });
 app.post("/", function(req,res) {
-     res.sendFile(__dirname + "/Window/createscreen/create.html");
+     res.sendFile(__dirname + "/Window/homescreen/home.html");
 });
 
 
