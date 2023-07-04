@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 // for serving files in the public folder, such as CSS files
 app.use(express.static("./Window/homescreen"));
+app.use(express.static("./Window/createscreen"));
+app.use(express.static("./Window/createscreen"));
 // server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req,res) {
     res.sendFile(__dirname + "/Window/homescreen/home.html");
