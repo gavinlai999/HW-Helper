@@ -5,10 +5,10 @@ const app = express();
 app.use(express.static("./Window"));
 // server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req,res) {
-    res.sendFile(__dirname + "/Window/index.html");
+    res.sendFile(__dirname + "/Window/homescreen/home.html");
 });
 app.post("/", function(req,res) {
-     res.sendFile(__dirname + "/Window/index2.html");
+     res.sendFile(__dirname + "/Window/createscreen/create.html");
 });
 
 
