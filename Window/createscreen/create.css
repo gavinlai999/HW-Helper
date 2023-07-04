@@ -1,14 +1,16 @@
 body{
     background-color:lightgreen;
+    /*makes footer take up all the space */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 .title{
-    color:white;
-    text-align:left;
-    padding:1 rem;
-    padding-left:8px;
-    position:sticky;
-    top:1px;
-    background-color:lightgreen;
+  color:white;
+  text-align:left;
+  padding-left:1rem;
+  flex:1;
 }
 
 .navbar2 ul{
@@ -16,6 +18,8 @@ body{
     background:#444;
     width:100%;
     padding:0;
+    /*makes sure the title and navbar are on same row with no gaps/background color showing */
+    display:flex;
     margin:0;
     text-align:right;
 }
@@ -36,9 +40,23 @@ body{
     text-align:center;
 }
 
+.navbar2 a {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar2 a:hover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  background: whitesmoke;
+  z-index: -1;
+}
 .navbar2 a:hover{
-    background:whitesmoke;
-    color:#444;
+  color:#444;
 }
 
 
@@ -118,10 +136,12 @@ body{
   }
 
 .addbutton{
-    display:inline-flex;
-    height:15px;
+    display:flex;
+    justify-content:center;
+    height:100%;
+    width:100%;
     padding:10px;
-    background-color:white;
+    background:transparent;
     border:none;
     outline:none;
     border-radius:5px;
@@ -136,10 +156,100 @@ body{
     background-color:gray;
     color:#666;
 }
-.button__icon{
+.addbutton__icon{
     display:inline-flex;
     align-items:center;
-    padding: 0 12px;
+    justify-content:center;
+    padding: 1px;
     color:#444;
     height:100%;
+    font-size:100px;
+
 }
+
+.todolisttext{
+  color:#444;
+}
+
+.deletebutton{
+  display:flex;
+  height:100%;
+  width:100%;
+  padding:10px;
+  background:transparent;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  overflow:hidden;
+}
+
+.deletebutton:hover{
+  background-color:whitesmoke;
+}
+
+.deletebutton:active{
+  background-color:gray;
+  color:#666;
+}
+.deletebutton__icon{
+  display:inline-flex;
+  align-items:center;
+  padding: 1px;
+  color:#444;
+  height:100%;
+  font-size:100px;
+}
+
+/*center all the content on screen */
+.content{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:80%;
+  margin:auto;
+  /* expand content on screen to prevent gap*/
+  flex:1;
+}
+
+/* footer for screen with hyperlinks */
+.footer-container{
+  background-color:#343434;
+  padding-top: 0;
+}
+.footer{
+  width:100%;
+  height: 30vh;
+  background-color:#343434;
+  color:white;
+  display:flex;
+  margin: 0 auto;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.footer-heading{
+  display:flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h2{
+  margin-bottom: 2rem;
+}
+
+.footer-heading a{
+  color:#e1d9d1;
+  text-decoration:none;
+  margin-bottom:0.5rem;
+}
+/* footer-text chnages color when hovered */
+.footer-heading a:hover{
+  color:gray;
+  transition: 0.3s ease-out;
+}
+.footer-head h2:hover{
+  color:darkgray;
+  transition: 0.3 ease-out;
+}
+

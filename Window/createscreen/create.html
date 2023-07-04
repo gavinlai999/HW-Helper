@@ -5,68 +5,104 @@
         <link rel="stylesheet" href="create.css">
     </head>
     <body>
-        <h1 class='title'>Create Your Homework Schedule!</h1>
-        <div class="navbar2">
-            <ul>
-                <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/homescreen/home.html'">Home</a></li>
-                <li><a onclick = "window.location.href= 'http://127.0.0.1:5500/Window/createscreen/create.html'">Create</a></li>
-                <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/supportscreen/support.html'">Support</a></li>
-            </ul>
-        </div>
-        <br>
-        <br>
         <div>
-            <h3 class="directions">Assignment Name:</h3>
-        <textarea class ='textbox' placeholder="Enter Assignment Name Here"></textarea>
-        <br>
-        <br>
-        <div>
-        <h3 class ='directions'>Subjects</h3>
-        <input type="checkbox">
-        <label>Math</label>
-        <input type="checkbox">
-        <label>English</label>
-        <input type="checkbox">
-        <label>Science</label>
-        <input type="checkbox">
-        <label>Elective</label>
-        <input type="checkbox">
-        <label>Foreign Language</label>
-        <br>
-        <input type="checkbox">
-        <label>Art</label>
-        <input type="checkbox">
-        <label>History</label>
-        <input type="checkbox">
-        <label>Computer Class</label>
-        <input type="checkbox">
-        <label>PE</label>
-        <input type="checkbox">
-        <label>Culinary Art</label>
-        </div>
-        <h3 class = "directions">Due Date</h3>
-        <div class="dropdown">
-            <button class="dropdownbutton">Time</button>
-            <div class="dropdown-content">
-            <a href="#">1 Hour</a>
-            <a href="#">2 Hours</a>
-            <a href="#">3 Hours</a>
-            <a href="#">4 Hours</a>
-            <a href="#">5 Hours</a>
-            <a href="#">6 Hours</a>
+            <div class="navbar2">
+                <ul>
+                    <h1 class='title'>Create Your Homework Schedule!</h1>
+                    <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/homescreen/home.html'">Home</a></li>
+                    <li><a onclick = "window.location.href= 'http://127.0.0.1:5500/Window/createscreen/create.html'">Create</a></li>
+                    <li><a onclick = "window.location.href='http://127.0.0.1:5500/Window/supportscreen/support.html'">Support</a></li>
+                </ul>
             </div>
-          </div>
+        </div>
         <br>
         <br>
-        <button type="button" class="addbutton">
-            <span class="button__icon">
-                <ion-icon name="add-circle-outline"></ion-icon>
-            </span>
-        </button>
+        <div class="content">
+            <div class="content">
+                <h3 class="directions">Assignment Name:</h3>
+            <textarea class ='textbox' placeholder="Enter Assignment Name Here"></textarea>
+            <br>
+            <br>
+            <div>
+                <div class="content">
+                    <h3 class ='directions'>Subjects(Select what class the assignment is for)</h3>
+                </div>
+            <input type="checkbox">
+            <label>Math</label>
+            <input type="checkbox">
+            <label>English</label>
+            <input type="checkbox">
+            <label>Science</label>
+            <input type="checkbox">
+            <label>Elective</label>
+            <input type="checkbox">
+            <label>Foreign Language</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label>Art</label>
+            <input type="checkbox">
+            <label>History</label>
+            <input type="checkbox">
+            <label>Computer Class</label>
+            <input type="checkbox">
+            <label>PE</label>
+            <input type="checkbox">
+            <label>Culinary Art</label>
+            </div>
+            <h3 class = "directions">Due Date(Choose Time Limit of Assignment)</h3>
+            <div class="dropdown">
+                <button class="dropdownbutton">Time</button>
+                <div class="dropdown-content">
+                <a href="#">1 Hour</a>
+                <a href="#">2 Hours</a>
+                <a href="#">3 Hours</a>
+                <a href="#">4 Hours</a>
+                <a href="#">5 Hours</a>
+                <a href="#">6 Hours</a>
+                </div>
+              </div>
+            <br>
+            <br>
+            <div>
+                <h3 class="directions">Add</h3>
+                <button type="button" class="addbutton">
+                    <span class="addbutton__icon">
+                        <ion-icon  name="add-circle-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            </div>
+            <div>
+                <h3 class="todolisttext">To-Do-List</h3>
+            </div>
+            <div>
+                <h3 class="directions">Delete</h3>
+                <button type="button" class="deletebutton">
+                    <span style="text-align:center" class="deletebutton__icon">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            <br>
+            <br>
         </div>
-        <div>
-            <h1>To-Do-List</h1>
+        <div class='footer-container'>
+            <div class='footer'>
+                <div class='footer-heading footer-1'>
+                    <h2> Contacts </h2>
+                    <a href="#">Phone: 626-525-9722</a>
+                    <a href="#">Email: gavinlai07@gmail.com</a>
+                    <a href="#">Snapchat: gavinlai999</a>
+                </div>
+                <div class='footer-heading footer-2'>
+                    <h2>Social Media</h2>
+                    <a href='https://www.instagram.com/gavinlai999/'>Instagram</a>
+                    <a href="https://www.facebook.com/gavin.lai.7399">Facebook</a>
+                    <a href="https://www.tiktok.com/@gavinlai999">TikTok</a>
+                </div>
         </div>
+    </div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>

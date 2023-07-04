@@ -1,14 +1,18 @@
 body{
     background-color:lightgreen;
+    /*makes footer take up all the space so there are no gaps of background */
+    display: flex;
+    flex-direction: column;
 }
 .title{
     color:white;
     text-align:left;
-    padding:1 rem;
-    padding-left:8px;
+    flex:1;
+    padding-left:1rem;
+}
+.position{
     position:sticky;
-    top:1px;
-    background-color:lightgreen;
+    top:0px;
 }
 .navbar ul{
     list-style:none;
@@ -16,7 +20,9 @@ body{
     width:100%;
     padding:0;
     margin:0;
-    text-align:right;
+    /*makes sure the title and navbar are on same row with no gaps/background color showing */
+    display:flex;
+    justify-content:flex-end;
 }
 .navbar li{
     display: inline-block;
@@ -26,20 +32,39 @@ body{
 .navbar a{
     text-decoration:none;
     color: whitesmoke;
-    width:100px;
-    display:block;
+    width:100%;
+    display:inline-block;
+    box-sizing:border-box;
     padding: 25px 20px;
     text-transform:uppercase;
     font-weight:bold;
     font-family: arial;
     text-align:center;
+    /* Add the following properties */
+    min-width: 150px;
+    /* Adjust the width as needed */
+    white-space: nowrap;
+    flex-grow:1;
 }
 
-.navbar a:hover{
-    background:whitesmoke;
+.navbar a {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navbar a:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    background: whitesmoke;
+    z-index: -1;
+  }
+  .navbar a:hover{
     color:#444;
-}
-
+  }
 
 /* background picture */
 .picture1{
@@ -48,7 +73,10 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.6), 
     rgba(0,0,0,0.6), url(images/homeworkpicture.jpg));
     background-size:cover;
+    -webkit-background-size:cover;
     background-position:center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position:relative;
 }
 
@@ -67,9 +95,9 @@ body{
     left:50%;
     transform:translate(-50%, -50%);
     font-size: 160px;
-    -webkit-text-stroke:1px #fff;
+    -webkit-text-stroke:1px #FFFFFF;
     color:transparent;
-    background-image:linear-gradient(#fff, #fff);
+    background-image:linear-gradient(#FFFFFF, #FFFFFF);
     background-repeat:no-repeat;
     -webkit-background-clip:text;
     background-position: -900px 0;
@@ -80,4 +108,46 @@ body{
     100%{
         background-position: 0 0;
     }
+}
+
+/* footer for screen with hyperlinks */
+.footer-container{
+    background-color:#343434;
+    padding-bottom: 64px;
+    padding-top: 32px;
+}
+.footer{
+    width:1000px;
+    height: 20vh;
+    background-color:#343434;
+    color:white;
+    display:flex;
+    margin: 0 auto;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.footer-heading{
+    display:flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color:#e1d9d1;
+    text-decoration:none;
+    margin-bottom:0.5rem;
+}
+/* footer-text chnages color when hovered */
+.footer-heading a:hover{
+    color:gray;
+    transition: 0.3s ease-out;
+}
+.footer-head h2:hover{
+    color:darkgray;
+    transition: 0.3 ease-out;
 }
