@@ -6,6 +6,10 @@ body{
     margin: 0;
     padding: 0;
 }
+.navbarandtitlecontainer2{
+  position:sticky;
+  top:0px;
+}
 .title{
   color:white;
   text-align:left;

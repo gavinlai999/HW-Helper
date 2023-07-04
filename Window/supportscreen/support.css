@@ -22,6 +22,11 @@ html,body{
     margin:0;
     text-align:right;
 }
+.navbarandtitlecontainer3{
+  position:sticky;
+  top:0px;
+}
+
 .navbar3 li{
     display: inline-block;
 }
