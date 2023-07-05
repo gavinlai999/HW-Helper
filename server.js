@@ -4,20 +4,20 @@ const path = require("path");
 // Instantiate Express
 const app = express();
 
-// Serve files in the public folder, such as CSS files
-app.use(express.static(path.join(__dirname, "Window")));
+// Serve files in the public folder, including CSS files
+app.use(express.static(path.join(__dirname, "Windows")));
 
 // Server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "homescreen", "home.html"));
+  res.sendFile(path.join(__dirname, "Windows", "home.html"));
 });
 
 app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "createscreen", "create.html"));
+  res.sendFile(path.join(__dirname, "Windows", "create.html"));
 });
 
 app.post("/support", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "supportscreen", "support.html"));
+  res.sendFile(path.join(__dirname, "Windows", "support.html"));
 });
 
 // Start the server
