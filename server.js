@@ -9,15 +9,15 @@ app.use(express.static(path.join(__dirname, "Windows")));
 
 // Server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "home.html"));
+  res.sendFile(path.join(__dirname, "Windows", "homescreen", "home.html"));
 });
 
 app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "create.html"));
+  res.sendFile(path.join(__dirname, "Windows", "createscreen", "create.html"));
 });
 
 app.post("/support", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "support.html"));
+  res.sendFile(path.join(__dirname, "Windows", "supportscreen", "support.html"));
 });
 
 // Start the server
