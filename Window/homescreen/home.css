@@ -1,5 +1,5 @@
 body{
-    background-color:lightgreen;
+    background-color:#0092ca;
     /*makes footer take up all the space so there are no gaps of background */
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ body{
 }
 .navbar ul{
     list-style:none;
-    background:#444;
+    background: #222831;
     width:100%;
     padding:0;
     margin:0;
@@ -59,11 +59,11 @@ body{
     left: 0;
     right: 0;
     bottom: -20px;
-    background: whitesmoke;
+    background: #eeeeee;
     z-index: -1;
   }
   .navbar a:hover{
-    color:#444;
+    color: #222831;
   }
 
 /* background picture */
@@ -112,14 +112,14 @@ body{
 
 /* footer for screen with hyperlinks */
 .footer-container{
-    background-color:#343434;
+    background-color:#393e46;
     padding-bottom: 64px;
     padding-top: 32px;
 }
 .footer{
     width:1000px;
     height: 20vh;
-    background-color:#343434;
+    background-color:#393e46;
     color:white;
     display:flex;
     margin: 0 auto;
@@ -138,7 +138,7 @@ body{
 }
 
 .footer-heading a{
-    color:#e1d9d1;
+    color:#eeeeee;
     text-decoration:none;
     margin-bottom:0.5rem;
 }

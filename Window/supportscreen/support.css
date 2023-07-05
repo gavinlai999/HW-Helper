@@ -1,5 +1,5 @@
 html,body{
-    background-color:lightgreen;
+    background-color:#0092ca;
     /*makes footer take up all the space */
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ html,body{
 }
 .navbar3 ul{
     list-style:none;
-    background:#444;
+    background: #222831;
     width:100%;
     padding:0;
     display:flex;
@@ -34,7 +34,7 @@ html,body{
 /* text in navbar style */
 .navbar3 a{
     text-decoration:none;
-    color: whitesmoke;
+    color: #eeeeee;
     width:100px;
     display:block;
     padding: 25px 20px;
@@ -56,11 +56,11 @@ html,body{
   left: 0;
   right: 0;
   bottom: -12px;
-  background: whitesmoke;
+  background: #eeeeee;
   z-index: -1;
 }
 .navbar3 a:hover{
-  color:#444;
+  color: #222831;
 }
 
 .directiontext{
@@ -69,7 +69,7 @@ html,body{
     font-family:arial;
 }
 .submitbutton {
-    background-color: #444;
+    background-color:  #222831;
     color: white;
     padding: 1rem;
     border-radius:2rem;
@@ -78,7 +78,7 @@ html,body{
     cursor: pointer;
   }
   .submitbutton:hover{
-    background-color:whitesmoke;
+    background-color:#eeeeee;
     color:#666;
   }
   .submitbutton:active{
@@ -96,14 +96,14 @@ html,body{
 
 /* footer for screen with hyperlinks */
 .footer-container{
-    background-color:#343434;
+    background-color:#393e46;
     padding-bottom: 0;
     padding-top: 0;
   }
   .footer{
     width:100%;
     height: 30vh;
-    background-color:#343434;
+    background-color:#393e46;
     color:white;
     display:flex;
     margin: 0 auto;
@@ -122,7 +122,7 @@ html,body{
   }
   
   .footer-heading a{
-    color:#e1d9d1;
+    color:#eeeeee;
     text-decoration:none;
     margin-bottom:0.5rem;
   }
