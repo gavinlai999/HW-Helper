@@ -85,7 +85,6 @@ body{
     padding:0;
     font-family: 'poppins', sans-serif;
     box-sizing:border-box;
-    text-transform:uppercase;
 }
 
 /*animated 'welcome' text */
@@ -94,6 +93,7 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+    text-transform:uppercase;
     font-size: 160px;
     -webkit-text-stroke:1px #FFFFFF;
     color:transparent;
