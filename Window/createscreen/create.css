@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 body{
     background-color:#0092ca;
     /*makes footer take up all the space */
@@ -26,7 +27,7 @@ body{
 
 .container{
   width:50%;
-  min-height: 100vh;
+  min-height: 75vh;
   background:white;
   padding:10px;
   margin:100px auto;
@@ -148,9 +149,8 @@ ul li span:hover{
     display:block;
     padding: 25px 30px 25px 20px;
     margin-right:1rem;
-    text-transform:uppercase;
     font-weight:bold;
-    font-family: arial;
+    font-family: 'Montserrat', sans-serif;
     text-align:center;
 }
 .navbar2 .supportbutton{
@@ -261,7 +261,7 @@ ul li span:hover{
 .footer{
   width:100%;
   height: 30vh;
-  background-color:#393e46;
+  background-color:#343434;
   color:white;
   display:flex;
   margin: 0 auto;
