@@ -3,18 +3,18 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "Windows")));
+app.use(express.static(path.join(__dirname, "Window")));
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "homescreen", "home.html"));
+  res.sendFile(path.join(__dirname, "Window", "homescreen", "home.html"));
 });
 
 app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "createscreen", "create.html"));
+  res.sendFile(path.join(__dirname, "Window", "createscreen", "create.html"));
 });
 
 app.post("/support", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "supportscreen", "support.html"));
+  res.sendFile(path.join(__dirname, "Window", "supportscreen", "support.html"));
 });
 
 const port = process.env.PORT || 10000;
