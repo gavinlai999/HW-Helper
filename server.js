@@ -1,26 +1,23 @@
 const express = require("express");
 const path = require("path");
 
-// Instantiate Express
 const app = express();
+const rootDirectory = process.cwd();
 
-// Serve files in the public folder, including CSS files
-app.use(express.static(path.join(__dirname, "Windows")));
+app.use(express.static(path.join(rootDirectory, "Windows")));
 
-// Server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "homescreen", "home.html"));
+  res.sendFile(path.join(rootDirectory, "Windows", "homescreen", "home.html"));
 });
 
 app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "createscreen", "create.html"));
+  res.sendFile(path.join(rootDirectory, "Windows", "createscreen", "create.html"));
 });
 
 app.post("/support", function(req, res) {
-  res.sendFile(path.join(__dirname, "Windows", "supportscreen", "support.html"));
+  res.sendFile(path.join(rootDirectory, "Windows", "supportscreen", "support.html"));
 });
 
-// Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log(`Server is running on port ${port}.`);
