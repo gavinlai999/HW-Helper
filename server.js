@@ -3,18 +3,25 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "Window")));
+app.use("/Window", express.static(path.join(__dirname, "Window"), {
+    setHeaders: (res, filePath) => {
+      if (filePath.endsWith(".css")) {
+        res.setHeader("Content-Type", "text/css");
+      }
+    }
+  }));
+  
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "homescreen", "home.html", 'home.css'));
+  res.sendFile(path.join(__dirname, "Window", "homescreen", "home.html"));
 });
 
 app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "createscreen", "create.html", 'create.css'));
+  res.sendFile(path.join(__dirname, "Window", "createscreen", "create.html"));
 });
 
 app.post("/support", function(req, res) {
-  res.sendFile(path.join(__dirname, "Window", "supportscreen", "support.html", 'support.css'));
+  res.sendFile(path.join(__dirname, "Window", "supportscreen", "support.html"));
 });
 
 const port = process.env.PORT || 10000;
