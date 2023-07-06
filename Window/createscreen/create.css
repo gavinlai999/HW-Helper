@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body{
     background-color:#0092ca;
     /*makes footer take up all the space */
@@ -15,6 +17,7 @@ body{
   color:white;
   text-align:left;
   padding:1rem;
+  font-family:'lato';
   padding-left:1rem;
   flex:1;
 }
@@ -22,110 +25,9 @@ body{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family:'poppins', sans-serif;
 }
 
-.container{
-  width:50%;
-  min-height: 75vh;
-  background:white;
-  padding:10px;
-  margin:100px auto;
-  border-radius:25%;
-}
 
-.hw-list {
-  width:100%;
-  max-width:540px;
-  background:white;
-  margin:100px auto 20px;
-  padding: 40px 30px 70px;
-  border-radius:10px;
-}
-.hw-list h2{
-  color:#002765;
-  display:flex;
-  align-items:center;
-  margin-bottom:20px;
-}
-.hw-list h2 img{
-  width:30px;
-  margin-left:10px;
-}
-.row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:#edeef0;
-  border-radius:30px;
-  padding-left:20px;
-  margin-bottom:25px;
-}
-input{
-  flex:1;
-  border:none;
-  outline:none;
-  background:transparent;
-  padding:10px;
-  font-weight:14px;
-}
-.addbutton{
-  border:none;
-  outline:none;
-  padding:16px 50px;
-  background:#0092ca;
-  color:white;
-  font-size:1rem;
-  cursor:pointer;
-  border-radius:40px;
-}
-.container ul li{
-  list-style:none;
-  font-size:17px;
-  padding:12px 8px 12px 50px;
-  user-select:none;
-  display:flex;
-  align-items:center;
-  cursor:pointer;
-  position:relative;
-}
-.container ul li::before{
-  content:'';
-  position:absolute;
-  height:28px;
-  width:28px;
-  border-radius:50%;
-  background-image:url(images/uncheckedbox.png);
-  background-size:cover;
-  background-position:center;
-  /* Properly level the checkbox button with the text to the right of it */
-  top:50%;
-  transform: translateY(-50%);
-  left:8px;
-  margin-top:0px;
-}
-ul li.checked{
-  color:#555;
-  text-decoration:line-through;
-}
-ul li.checked::before{
-  background-image:url(images/checkimage.png)
-}
-ul li span{
-  position:absolute;
-  right:0;
-  top:5px;
-  width:40px;
-  height:40px;
-  font-size:22px;
-  color: #222831;
-  line-height:40px;
-  text-align:center;
-  border-radius:50%;
-}
-ul li span:hover{
-  background:#edeef0;
-}
 .navbar2 ul{
     list-style:none;
     background: #222831;
@@ -175,7 +77,7 @@ ul li span:hover{
   z-index: -1;
 }
 .navbar2 a:hover{
-  color: #222831
+  color: #222831;
 }
 
 /*center all the content on screen */
@@ -190,10 +92,122 @@ ul li span:hover{
   flex:1;
 }
 
+/* center add homework area*/
+.container{
+  width:50%;
+  min-height: 75vh;
+  background:white;
+  padding:10px;
+  margin:100px auto;
+  border-radius:25%;
+}
+
+.hw-list {
+  width:100%;
+  max-width:540px;
+  background:white;
+  margin:100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius:10px;
+}
+.hw-list h2{
+  color:#333;
+  font-family:'montserrat';
+  font-weight:2rem;
+  display:flex;
+  align-items:center;
+  margin-bottom:20px;
+}
+.hw-list h2 img{
+  width:30px;
+  margin-left:10px;
+}
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#edeef0;
+  border-radius:30px;
+  padding-left:20px;
+  margin-bottom:25px;
+}
+input{
+  flex:1;
+  border:none;
+  outline:none;
+  background:transparent;
+  padding:10px;
+  font-weight:14px;
+}
+.addbutton{
+  border:none;
+  outline:none;
+  padding:16px 50px;
+  background:#0092ca;
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+  border-radius:40px;
+  font-family:'montserrat';
+  font-weight:2rem;
+}
+.container ul li{
+  list-style:none;
+  font-size:17px;
+  padding:12px 8px 12px 50px;
+  user-select:none;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+  position:relative;
+}
+.container ul li::before{
+  content:'';
+  position:absolute;
+  height:28px;
+  width:28px;
+  border-radius:50%;
+  background-image:url(images/uncheckedbox.png);
+  background-size:cover;
+  background-position:center;
+  /* Properly level the checkbox button with the text to the right of it */
+  top:50%;
+  transform: translateY(-50%);
+  left:8px;
+  margin-top:0px;
+}
+ul li.checked{
+  color:#555;
+  text-decoration:line-through;
+}
+ul li.checked::before{
+  background-image:url(images/checkimage.png)
+}
+ul li span{
+  position:absolute;
+  right:0;
+  top:5px;
+  width:40px;
+  height:40px;
+  font-size:22px;
+  color: #222831;
+  line-height:40px;
+  text-align:center;
+  border-radius:50%;
+}
+ul li span:hover{
+  background:#edeef0;
+}
+
+/*timer settings*/
 .wrapperbody, .wrapper, .content{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.timertext{
+  color:#3A3B3C;
 }
 .wrapperbody{
   padding: 0 10px;
@@ -207,6 +221,9 @@ ul li span:hover{
   border-radius: 10px;
   flex-direction: column;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  color:#333;
+  font-family:'montserrat';
+  font-weight:2rem;
 }
 .wrapper img{
   max-width: 103px;
@@ -215,10 +232,16 @@ ul li span:hover{
   font-size: 38px;
   font-weight: 500;
   margin: 30px 0;
+  color:#333;
+  font-family:'montserrat';
+  font-weight:2rem;
 }
 .wrapper .content{
   width: 100%;
   justify-content: space-between;
+  color:#333;
+  font-family:'montserrat';
+  font-weight:2rem;
 }
 .content.disable{
   cursor: no-drop;
@@ -245,13 +268,16 @@ ul li span:hover{
   width: 100%;
   border: none;
   outline: none;
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-size: 20px;
   padding: 17px 0;
   margin-top: 20px;
   border-radius: 5px;
+  width:12rem;
   background: #0092ca;
+  font-family:'montserrat';
+  font-weight:2rem;
 }
 /* footer for screen with hyperlinks */
 .footer-container{
@@ -261,7 +287,7 @@ ul li span:hover{
 .footer{
   width:100%;
   height: 30vh;
-  background-color:#343434;
+  background-color:#393e46;
   color:white;
   display:flex;
   margin: 0 auto;

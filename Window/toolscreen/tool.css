@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
 html,body{
     background-color:#0092ca;
     /*makes footer take up all the space */
@@ -11,8 +6,9 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color:#0092ca
+    background-color:#0092ca;
 }
+
 .title{
     color:white;
     text-align:left;
@@ -20,7 +16,7 @@ html,body{
     font-family:'lato';
     flex:1;
 }
-.navbar3 ul{
+.navbar4 ul{
     list-style:none;
     background: #222831;
     width:100%;
@@ -29,17 +25,17 @@ html,body{
     margin:0;
     text-align:right;
 }
-.navbarandtitlecontainer3{
+.navbarandtitlecontainer4{
   position:sticky;
   top:0px;
 }
 
-.navbar3 li{
+.navbar4 li{
     display: inline-block;
 }
 
 /* text in navbar style */
-.navbar3 a{
+.navbar4 a{
     text-decoration:none;
     color: #eeeeee;
     width:100px;
@@ -50,12 +46,12 @@ html,body{
     text-align:center;
 }
 
-.navbar3 a {
+.navbar4 a {
   position: relative;
   z-index: 1;
 }
 
-.navbar3 a:hover::before {
+.navbar4 a:hover::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -65,74 +61,62 @@ html,body{
   background: #eeeeee;
   z-index: -1;
 }
-.navbar3 a:hover{
+.navbar4 a:hover{
   color: #222831;
 }
-.formbody{
-  font-family: arial;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 30%;
-  place-items: center;
-  background: white;
-  border-radius:1.5rem;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+
+.calculatorbody{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+
 }
 
-.contactheader{
-  margin-bottom:2rem;
-  color:#222;
-  font-family:'Oswald';
-  font-weight: 3rem;
-}
-.secondarycontactheader{
-  color:#333;
-  font-family:'montserrat';
-  font-weight:2rem;
-}
-.contactparagraphtext{
-  color:#3A3B3C;
-  font-family:'Philopsopher';
-  font-size: 1rem;
-  font-weight:1rem;
-}
-.contactform{
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  align-items:center;
-  width:16rem;
-  gap:1rem;
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
 }
 
-input, textarea{
-  padding:1.4rem;
-  background:white;
-  border:1px solid black;
-}
-textarea{
-  height:6rem;
-}
-.submitbutton{
-  width:10rem;
-  padding:1.4rem;
-  font-size:20px;
-  cursor:pointer;
-  background:#0092ca;
-  color:white;
-  border:none;
-  align-items:center;
-  border-radius:25rem;
-  font-family:'montserrat';
-  font-weight:2rem;
+input::placeholder{
+    color: #ffffff;
 }
 
-.submitbutton:hover{
-  background:#18bfff;
-  color:#393e46;
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: white;
+    color: #444;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.equalbutton{
+    background-color: #fb7c14;
+}
+
+.operator{
+    color: #0092ca;
 }
 
 /* footer for screen with hyperlinks */
@@ -177,4 +161,3 @@ textarea{
     color:darkgray;
     transition: 0.3 ease-out;
   }
-  

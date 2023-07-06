@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="'viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="support.css">
     </head>
@@ -11,17 +13,31 @@
                     <h1 class="title">Support Us</h1>
                     <li><a onclick="window.location.href='http://127.0.0.1:5500/Window/homescreen/home.html'">Home</a></li>
                     <li><a onclick="window.location.href= 'http://127.0.0.1:5500/Window/createscreen/create.html'">Create</a></li>
+                    <li><a onclick="window.location.href='http://127.0.0.1:5500/Window/toolscreen/tool.html'">Tool</a></li>
                     <li><a onclick="window.location.href='http://127.0.0.1:5500/Window/supportscreen/support.html'">Support</a></li>
                 </ul>
             </div>
         </div>
-        <div class="info">
-            <h2 class="directiontext">Send us feedback on what we can improve on to make this app your personal reminder</h2>
-            <textarea placeholder='Suggest Here'></textarea>
-            <br>
-            <button class="submitbutton">Submit</button>
-        </div>
         <br>
+        <br>
+            <div style='margin-top:4rem;'class="formbody">
+                    <h1 class="contactheader">Contact Me!</h1>
+                    <h3 class="secondarycontactheader">Suggest Improvements/Feedback</h3>
+                    <p class="contactparagraphtext">Ex: Create more homework tools</p>
+                    <form class="contactform" action="https://formsubmit.co/32f2f83c3316898d54e0974705d99ec4" method="POST">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="text" name="Email" placeholder="Email" required>
+                        <input type="text" name="Phone Number" placeholder="Phone Number" required>
+                        <textarea name="Message" placeholder="Feedback"required></textarea>
+                        <button type="submit" class="submitbutton">Send</button>
+                        <br>
+                        <br>
+                        <br>
+                    </form>
+            </div>
+        <br>
+        <br>
+        <br>   
         <div class='footer-container'>
             <div class='footer'>
                 <div class='footer-heading footer-1'>

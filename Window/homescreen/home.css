@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body{
     background-color:#0092ca;
     /*makes footer take up all the space so there are no gaps of background */
@@ -9,6 +11,7 @@ body{
     color:white;
     text-align:left;
     flex:1;
+    font-family:'lato';
     padding-left:1rem;
 }
 .position{
