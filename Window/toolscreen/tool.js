@@ -1,6 +1,7 @@
+//Calculator Functions
+//Variables taken from HTML files
 let input = document.getElementById('inputBox');
 let buttons = document.querySelectorAll('button');
-
 let string = "";
 let arr = Array.from(buttons);
 arr.forEach(button => {
@@ -27,4 +28,20 @@ arr.forEach(button => {
         }
         
     })
+})
+
+
+//Word Counter Functions
+//Variables taken from HTML files
+let inputTextArea = document.getElementById('wordcounter-textarea');
+let characCount = document.getElementById('character-counter');
+let wordCount = document.getElementById('word-counter');
+
+inputTextArea.addEventListener('input', ()=>{
+    //Counts the amount of characters there are
+    characCount.textContent = inputTextArea.value.length;
+    //Change value when the words are deleted
+    let txt = inputTextArea.value.trim();
+    //Counts the amount of words there are
+    wordCount.textContent = txt.split(/\s+/).filter((item)=>item).length
 })
