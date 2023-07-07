@@ -113,6 +113,7 @@ input, textarea{
 }
 textarea{
   height:6rem;
+  resize:none;
 }
 .submitbutton{
   width:10rem;
