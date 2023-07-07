@@ -51,18 +51,49 @@ html,body{
   z-index: 1;
 }
 
-.navbar4 a:hover::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  right: 0;
-  bottom: -12px;
-  background: #eeeeee;
-  z-index: -1;
+/*Create neon effect on buttons when hovered*/
+.homebutton4:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  top:6px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
 }
-.navbar4 a:hover{
-  color: #222831;
+
+.createbutton4:nth-child(1):hover{
+  border-color:#0066ff;
+  top:6px;
+  color:#0066ff;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
+}
+
+.toolbutton4:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  top:6px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
+}
+
+.supportbutton4:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  top:6px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
+}
+
+@keyframes button{
+  0%{
+      box-shadow:#444;
+  }
+  50%{
+      box-shadow: 0 0 27px;
+  }
+  100%{
+      box-shadow:#444;
+  }
 }
 
 /*conversion picture edit*/

@@ -1,9 +1,14 @@
+//Variables
 const currentTime = document.querySelector("#timetext"),
 content = document.querySelector(".content"),
 selectMenu = document.querySelectorAll("select"),
 setAlarmBtn = document.querySelector("#timerbutton");
 let alarmTime, isAlarmSet,
+
+//Alarm sound
 ringtone = new Audio("sounds/alarm.mp3");
+
+//Alarm settings
 for (let i = 12; i > 0; i--) {
     i = i < 10 ? `0${i}` : i;
     let option = `<option value="${i}">${i}</option>`;
@@ -20,6 +25,7 @@ for (let i = 2; i > 0; i--) {
     selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
 }
 setInterval(() => {
+    //Get real life time
     let date = new Date(),
     h = date.getHours(),
     m = date.getMinutes(),
@@ -39,7 +45,10 @@ setInterval(() => {
         ringtone.loop = true;
     }
 });
+
+
 function setAlarm() {
+    //Alarm clock functions
     if (isAlarmSet) {
         alarmTime = "";
         ringtone.pause();
@@ -56,4 +65,6 @@ function setAlarm() {
     content.classList.add("disable");
     setAlarmBtn.innerText = "Clear Alarm";
 }
+
+//When alarm button is clicked, the alarm is set
 setAlarmBtn.addEventListener("click", setAlarm);

@@ -54,20 +54,51 @@ body{
     position: relative;
     z-index: 1;
   }
-  
-  .navbar a:hover::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    right: 0;
-    bottom: -20px;
-    background: #eeeeee;
-    z-index: -1;
-  }
-  .navbar a:hover{
-    color: #222831;
-  }
+
+/*Create neon effect on buttons when hovered*/
+.homebutton1:nth-child(1):hover{
+    border-color:#0066ff;
+    color:#0066ff;
+    top:6px;
+    box-shadow: 0 0 0 #0066ff;
+    animation:button 3s infinite;
+}
+
+.createbutton1:nth-child(1):hover{
+    border-color:#0066ff;
+    top:6px;
+    color:#0066ff;
+    box-shadow: 0 0 0 #0066ff;
+    animation:button 3s infinite;
+}
+
+.toolbutton1:nth-child(1):hover{
+    border-color:#0066ff;
+    color:#0066ff;
+    top:6px;
+    box-shadow: 0 0 0 #0066ff;
+    animation:button 3s infinite;
+}
+
+.supportbutton1:nth-child(1):hover{
+    border-color:#0066ff;
+    color:#0066ff;
+    top:6px;
+    box-shadow: 0 0 0 #0066ff;
+    animation:button 3s infinite;
+}
+
+@keyframes button{
+    0%{
+        box-shadow:#444;
+    }
+    50%{
+        box-shadow: 0 0 27px;
+    }
+    100%{
+        box-shadow:#444;
+    }
+}
 
 /* background picture */
 .picture1{

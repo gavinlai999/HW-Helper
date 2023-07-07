@@ -55,29 +55,56 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-align:center;
 }
-.navbar2 .supportbutton{
-  padding-right:30px;
+/*Create neon effect on buttons when hovered*/
+.homebutton2:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  padding-top:19px;
+  padding-bottom:19px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
 }
-.navbar2 a {
-  position: relative;
-  z-index: 1;
+
+.createbutton2:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  padding-top:19px;
+  padding-bottom:19px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
 }
-.navbar2 .supportbutton:hover {
-  background-color: #eeeeee;
-  width:100%;
+
+.toolbutton2:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  padding-top:19px;
+  padding-bottom:19px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
 }
-.navbar2 a:hover::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  right: 0px;
-  bottom: -1px;
-  background: #eeeeee;
-  z-index: -1;
+
+.supportbutton2:nth-child(1):hover{
+  border-color:#0066ff;
+  color:#0066ff;
+  padding-top:19px;
+  padding-bottom:19px;
+  padding-right:40px;
+  box-shadow: 0 0 0 #0066ff;
+  animation:button 3s infinite;
 }
-.navbar2 a:hover{
-  color: #222831;
+
+
+/*Animation for neon effect on buttons when they are hovered over*/
+@keyframes button{
+  0%{
+      box-shadow:#444;
+  }
+  50%{
+      box-shadow: 0 0 27px;
+  }
+  100%{
+      box-shadow:#444;
+  }
 }
 
 /*center all the content on screen */
