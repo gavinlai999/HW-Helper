@@ -16,6 +16,12 @@ body{
 .position{
     position:sticky;
     top:0px;
+    background-size:cover;
+    -webkit-background-size:cover;
+    background-position:center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position:relative;
 }
 
 .navbar ul{
@@ -147,19 +153,42 @@ body{
 /* footer for screen with hyperlinks */
 .footer-container{
     background-color:#393e46;
-    padding-bottom: 64px;
-    padding-top: 32px;
+    padding-top:0px;
 }
 .footer{
-    width:1000px;
-    height: 20vh;
+    width:100%;
+    height: 30vh;
     background-color:#393e46;
     color:white;
     display:flex;
     margin: 0 auto;
     justify-content:center;
     flex-wrap:wrap;
-}
+    padding-top:50px;
+    border-color:white;
+    box-shadow: 0 0 0 white;
+    /*Makes sure the neon effect is displaying over the background image of page*/
+    background-size:cover;
+    -webkit-background-size:cover;
+    background-position:center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position:relative;
+    animation:footer 3s infinite;
+  }
+  
+  /*animation on footer*/
+  @keyframes footer{
+    0%{
+        box-shadow:#444;
+    }
+    50%{
+        box-shadow: 0 0 100px;
+    }
+    100%{
+        box-shadow:#444;
+    }
+  }
 
 .footer-heading{
     display:flex;

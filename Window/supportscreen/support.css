@@ -109,6 +109,21 @@ html,body{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  border-color:blue;
+  box-shadow: 0 0 0 blue;
+  animation:form 3s infinite;
+}
+
+@keyframes form{
+  0%{
+      box-shadow:#444;
+  }
+  50%{
+      box-shadow: 0 0 50px;
+  }
+  100%{
+      box-shadow:#444;
+  }
 }
 
 .contactheader{
@@ -180,6 +195,23 @@ textarea{
     margin: 0 auto;
     justify-content:center;
     flex-wrap:wrap;
+    padding-top:50px;
+    border-color:#eeeeee;
+    box-shadow: 0 0 0 #eeeeee;
+    animation:footer 3s infinite;
+  }
+  
+  /*animation on footer*/
+  @keyframes footer{
+    0%{
+        box-shadow:#444;
+    }
+    50%{
+        box-shadow: 0 0 100px;
+    }
+    100%{
+        box-shadow:#444;
+    }
   }
   
   .footer-heading{
