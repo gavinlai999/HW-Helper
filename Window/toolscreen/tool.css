@@ -269,7 +269,7 @@ button{
   box-shadow:0px 20px 40px rgba(30, 21, 49, 0.4);
   border-color:blue;
   box-shadow: 0 0 0 blue;
-  animation:counter 3s infinite;
+  animation:counter 4s infinite;
 }
 
 @keyframes counter{

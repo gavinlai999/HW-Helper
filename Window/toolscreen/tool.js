@@ -42,6 +42,6 @@ inputTextArea.addEventListener('input', ()=>{
     characCount.textContent = inputTextArea.value.length;
     //Change value when the words are deleted
     let txt = inputTextArea.value.trim();
-    //Counts the amount of words there are
+    //Keeps count of the amount of words there are from the inputted text by user
     wordCount.textContent = txt.split(/\s+/).filter((item)=>item).length
 })

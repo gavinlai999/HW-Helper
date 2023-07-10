@@ -174,7 +174,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     position:relative;
-    animation:footer 3s infinite;
+    animation:footer 4s infinite;
   }
   
   /*animation on footer*/

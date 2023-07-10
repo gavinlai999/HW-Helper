@@ -111,7 +111,7 @@ html,body{
   margin: 0 auto;
   border-color:blue;
   box-shadow: 0 0 0 blue;
-  animation:form 3s infinite;
+  animation:form 4s infinite;
 }
 
 @keyframes form{
